@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button.jsx";
 import { ModeToggle } from "./ui/mode-toggle.jsx";
 import { useAuth } from "../contexts/AuthContext"; 
+import "../App";
 
 const Navbar = () => {
   // Mobile menu state
@@ -41,6 +42,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
+          <img src="/DigiMenuLogo.png" alt="DigiMenuLogo" style={{width: "180px", height: "60px", margin: "7px 0px 0px -50px"}}/>
             <a href="/" className="flex items-center space-x-2 text-xl font-bold">
             </a>
           </div>
